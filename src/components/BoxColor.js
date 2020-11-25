@@ -1,17 +1,23 @@
 import React from 'react';
 
+
+
 class BoxColor extends React.Component {
-
-    render() {
-
-        return (
-            <div>
-            <div style={{backgroundColor:` ${this.props.{r}}, ${this.props{g}},${this.props{b}} `}}> </div>
-            </div>
-    }
-        
-}
     
+    render () {
 
+        let style = {
+            width: "200px",
+            height: "100px",
+            backgroundColor: `rgb(  ${this.props.r}, ${this.props.g}, ${this.props.b} ) `
+          };
 
-export default BoxColor;
+          
+        return (
+            <div style={style} > rgb ( {this.props.r}, {this.props.g}, {this.props.b}) </div>
+        )
+    }
+}
+
+export default BoxColor; 
+
