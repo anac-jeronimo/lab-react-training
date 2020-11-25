@@ -1,23 +1,25 @@
 import React from 'react';
 
-function Rating (props) {
+function Rating(props) {
+    let value = ''
 
-    let star = 0;
-    if(star.props === 0) {
-        return ''
-    } else if (star.props > 0 && star.props < 2) {
-        return '**'
-    } else if(star.props > 2 && star.props < 5) {
-        return '*****'
+    if(props.children) {
+        value = Math.round(props.children)
+    } else if(props.rating) {
+        value = Math.round(props.rating)
     }
-    
-    math.floor(star === 0 ? '*****' : props.star === '*****')
 
-    return (
-        <div> 
-            <h2> {star.props} {props.children} </h2>
-        </div>
-    )
+    
+let emptyStar = '☆';
+let fullStar = '★';
+
+let stars = fullStar.repeat(value) + emptyStar.repeat(5 - value)
+
+  return (
+    <div>
+      <h2>{stars}</h2>
+    </div>
+  );
 }
 
 export default Rating;
