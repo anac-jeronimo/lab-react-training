@@ -3,12 +3,11 @@ import React from 'react';
 class BoxColor extends React.Component {
 
     render() {
-     
+
         return (
             <div>
-                {` Random color ${this.props.} and ${this.props.max} => ${getRandom(this.props.min, this.props.max)}  ` }
+            <div style={{backgroundColor:` ${this.props.{r}}, ${this.props{g}},${this.props{b}} `}}> </div>
             </div>
-        )
     }
         
 }
