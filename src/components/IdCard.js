@@ -19,4 +19,5 @@ class IdCard extends React.Component {
     }
 }
 
+
 export default IdCard;
