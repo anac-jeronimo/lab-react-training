@@ -5,14 +5,20 @@ function CreditCard (props) {
 
     return ( 
         <div>
-            <h5> {props.type} </h5>
-            <h5> {props.number} </h5>
-            <h5> {props.expirationMonth} </h5>
-            <h5> {props.expirationYear} </h5>
-            <h5> {props.bank} </h5>
-            <h5> {props.owner} </h5>
-            <h5> {props.bgColor} </h5>
-            <h5> {props.color} </h5>
+            <div className="card" style={{width: "550px", height: "300px"}} >
+            <div className="card-body">
+            <div>
+            <h5 className="card-title"> {props.type} </h5>
+            </div> 
+            <h5 className="card-title"> {props.number} </h5>
+            <h5 className="card-title"> {props.expirationMonth} </h5>
+            <h5 className="card-title"> {props.expirationYear} </h5>
+            <h5 className="card-title"> {props.bank} </h5>
+            <h5 className="card-title"> {props.owner} </h5>
+            <h5 className="card-title"> {props.bgColor} </h5>
+            <h5 className="card-title"> {props.color} </h5>
+            </div>
+            </div>
         </div>
     ) 
         

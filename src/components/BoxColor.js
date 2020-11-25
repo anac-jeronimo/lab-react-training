@@ -7,8 +7,8 @@ class BoxColor extends React.Component {
     render () {
 
         let style = {
-            width: "200px",
-            height: "100px",
+            width: "400px",
+            height: "200px",
             backgroundColor: `rgb(  ${this.props.r}, ${this.props.g}, ${this.props.b} ) `
           };
 
